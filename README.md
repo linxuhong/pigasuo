@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-#  
 
-## 
+## 支持 SpringMVC，Struts2 mvc
 
 1. src
     1. main
@@ -32,5 +30,5 @@
 
 
 =======
-# pigasuo
->>>>>>> 91d0f6af190d8e8e0f0a0722c89cfc4fb005febf
+# www.pigasuo.com
+ 
