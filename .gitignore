@@ -1,0 +1,6 @@
+.idea/
+target/
+src/main/webapp/statics-gen/
+ backend-front.iml
+/src/main/webapp/WEB-INF/classes/
+
