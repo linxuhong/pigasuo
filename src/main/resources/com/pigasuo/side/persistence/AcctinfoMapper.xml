@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pigasuo.side.persistence.AcctinfoMapper">
+
+    <cache />
+
+    <resultMap  id="abc" type="com.pigasuo.side.domain.Acctinfo">
+        <result  column="id" property="id" ></result>
+        <result  column="logtitle" property="acctNo" ></result>
+        <result  column="logcontent" property="operators" ></result>
+    </resultMap>
+
+  <select id="getAcctinfoById" parameterType="Acctinfo" resultMap="abc">
+       select *  from log limit 1
+  </select>
+
+
+    <select id="getAcctinfoByAcctNo" parameterType="Acctinfo" resultType="Acctinfo">
+
+    </select>
+  <update id="updateAcctinfo" parameterType="Acctinfo">
+    UPDATE acctinfo SET
+    	acct_no = #{acctNo},
+     	operators = #{operators},
+     	total_amount = #{totalAmount},
+    WHERE id = #{id}
+  </update>
+
+  <insert id="insertAcctinfo" parameterType="Acctinfo">
+    <selectKey keyProperty="id" resultType="int" order="AFTER">
+      select last_insert_id();
+    </selectKey>
+    INSERT INTO Acctinfo (acct_no,operators,total_amount) VALUES (#{acctNo}, #{operators}, #{totalAmount})
+  </insert>
+
+</mapper>
