@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Account {
-	 
+
 	private Long id;
 	
 	@NotNull

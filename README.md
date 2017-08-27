@@ -1,12 +1,12 @@
 <<<<<<< HEAD
-# 前台应用公用 后台管理
+#  
 
-## 1 项目结构  (springmvc struts均支持)
+## 
 
 1. src
     1. main
     1. java
-         1. com.yhd.detail
+         1. com.pigasuo.side
              1. domain   ---领域对象,用于db--JavaBean映射
              1. persistence --mybatis dao接口层
              1. service /service/imp  -- service 层
@@ -17,7 +17,7 @@
                      *配置 struts2  action对象          .do请求
              
      1. resources
-         1.   resources\com\yhd\detail\   
+         1.   resources\com\pigasuo\side\   
               *配置persistence对应的mapper,即mybatis sql xml文件
               *Mapper.java类中的方法名，为mapp.xml中的sql xml节点id名相对应
               参照AccountMapper.xml.AccountMapper.java
